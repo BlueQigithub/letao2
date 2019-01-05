@@ -92,7 +92,7 @@ ul{
 }
 
 .lt_aside .as_category a i{
-    /* margin-right: 5px; */
+    margin-right: 5px;
 }
 .lt_aside .as_category .child a{
     padding-left:60px;
@@ -101,7 +101,7 @@ ul{
 /* 右侧内容部分 */
 .lt_content{
     height: 2000px;
-    background: pink;
+    /* background: pink; */
     padding-left: 180px;
     transition: all 1s;
 }
@@ -117,6 +117,7 @@ ul{
     background: #5D9ED1;
     padding-left: 180px;
     transition: all 1s;
+    z-index: 666;
 }
 .lt_content .content_top.hidemeun{
     padding-left: 0;
