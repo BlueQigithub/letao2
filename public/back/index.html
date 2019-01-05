@@ -2,12 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 移动端视口配置 -->
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入bootstrap包 -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
+    <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
+    <link rel="stylesheet" href="./css/common.css">
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>这是首页</h1>
+   
+    <!-- 左边导航栏 -->
+    <div class="lt_aside">
+        <div class="as_title"><a href="#">黑马33期</a></div>
+        <div class="as_user">
+            <img src="./images/02.jpg" alt="">
+            <p>超级管理员</p>
+        </div>
+        <div class="as_category">
+            <ul>
+                <li><a href="#" class="current"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a></li>
+                <li><a href="#" class="cate_nav">
+                    <i class="glyphicon glyphicon-list"></i>
+                    <span>分类管理</span></a>
+                    <div class="child">
+                        <a href="#">一级分类</a>
+                        <a href="#">二级分类</a>
+                    </div>
+                </li>
+                <li><a href="#"><i class="glyphicon glyphicon-tags"></i><span>商品管理</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 右面内容 -->
+    <div class="lt_content"></div>
+
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<!-- 进度条插件 -->
+<script src="./lib/nprogress/nprogress.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/login.js"></script>
+
 </body>
 </html>

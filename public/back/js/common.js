@@ -16,3 +16,11 @@ setInterval( function(){
 },2000)
   
 })
+
+//入口函数 , 点击category导航中的a 时 , 进行切换current类
+$(function(){
+    $(".as_category .cate_nav").on("click",function(){
+        //切换下一个兄弟元素 显示隐藏
+        $(this).next().slideToggle();
+    })
+})
