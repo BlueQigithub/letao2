@@ -24,3 +24,39 @@ $(function(){
         $(this).next().slideToggle();
     })
 })
+
+
+// 右侧头部按钮功能
+//功能1: 点击logout, 模态框出现
+$(function(){
+    $(".logout").on("click",function(){
+        $("#logoutModal").modal("show");
+    })
+
+
+//功能2: 点击btn_logout退出按钮 , 发送ajax请求
+   $(".btn_logout").on("click",function(){
+
+      $.ajax({
+          url:"/employee/employeeLogout",
+          type:"get",
+          dataType:"json",
+          success:function( info ){
+            if(info.success){
+              //退出成功 , 跳转到登录页
+              location.href = "login.html";
+            }
+          }
+      })
+   })
+
+
+   // 功能3: 点击menus 按钮 , 左侧lt_aside 进行显示或隐藏
+   $(".menus").on("click",function(){
+       $(".lt_aside").toggleClass("hidemenu");
+       $(".content_top").toggleClass("hidemeun");
+       $(".lt_content").toggleClass("hidemenu");
+   })
+})
+
+

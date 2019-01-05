@@ -1,0 +1,8 @@
+
+/* 图表 */
+.echarts_left,
+.echarts_right{
+    width: 457px;
+    height: 400px;
+    background: cyan;
+}

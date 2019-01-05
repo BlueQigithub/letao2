@@ -10,14 +10,18 @@ ul{
     padding: 0;
     list-style: none;
 }
+.mt-150{
+    margin-top: 150px;
+}
+.red{
+    color:#A94442;
+}
 .body_bg{
     width: 100%;
     height: 100%;
     background: #222D32;
 }
-.mt-150{
-    margin-top: 150px;
-}
+
 .panel-title{
     height: 40px;
     line-height: 40px;
@@ -33,6 +37,12 @@ ul{
     width: 180px;
     height: 100%;
     background: #222D32;
+    z-index: 999;
+    /* 过渡实现动画 */
+    transition: all 1s;
+}
+.lt_aside.hidemenu{
+    left: -180px;
 }
 .lt_aside .as_title{
     width: 100%;
@@ -82,9 +92,46 @@ ul{
 }
 
 .lt_aside .as_category a i{
-    margin-right: 5px;
+    /* margin-right: 5px; */
 }
-.lt_aside .as_category .child{
-    padding-left:20px;
-    /* display: none; */
+.lt_aside .as_category .child a{
+    padding-left:60px;
+}
+
+/* 右侧内容部分 */
+.lt_content{
+    height: 2000px;
+    background: pink;
+    padding-left: 180px;
+    transition: all 1s;
+}
+.lt_content.hidemenu{
+    padding-left: 0px;
+}
+.lt_content .content_top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #5D9ED1;
+    padding-left: 180px;
+    transition: all 1s;
+}
+.lt_content .content_top.hidemeun{
+    padding-left: 0;
+}
+.lt_content .content_top a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.lt_content .content_top a i{
+    font-size: 20px;
+    color: #fff;
+}
+.lt_content .content{
+    padding-top: 70px;
 }
