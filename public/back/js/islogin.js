@@ -9,7 +9,7 @@
          type:"get",
          dataType:"json",
          success:function( info ){
-            console.log(info);
+            // console.log(info);
             if( info.success){
               //继续访问
               console.log("当前用户已登录");

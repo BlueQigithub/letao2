@@ -1,0 +1,6 @@
+
+/* 表格 */
+.table.table-bordered th,
+.table.table-bordered tr{
+    text-align: center;
+}
