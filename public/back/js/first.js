@@ -42,7 +42,7 @@ $(".btnAdd").on("click", function(){
 })
 
  //3, 表单校验
- $(".form-group").bootstrapValidator({
+ $("#form").bootstrapValidator({
      //显示校验时的图标
     feedbackIcons: {
         valid: 'glyphicon glyphicon-ok',
@@ -78,7 +78,7 @@ $(".btnAdd").on("click", function(){
             //关闭模态框
             $("#firstAddModal").modal("hide");
             //重新渲染页面
-             rander();
+            rander();
             //重置表单 内容和表单装态都有重置 , 如果只要重置内容就不用写true
             $('#form').data("bootstrapValidator").resetForm(true);
         }

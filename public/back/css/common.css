@@ -139,3 +139,11 @@ ul{
 .lt_content .content{
     padding-top: 70px;
 }
+
+/* 表格 */
+.table.table-bordered th,
+.table.table-bordered td{
+    text-align: center;
+    /* 垂直居中 */
+    vertical-align: middle;
+}
